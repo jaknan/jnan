@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Download
-      run: Invoke-WebRequest https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_win32.zip
+      run: Invoke-WebRequest https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_win32.zip -OutFile chromedriver_win32.zip
     - name: Extract
       run: Expand-Archive chromedriver_win32.zip
       
